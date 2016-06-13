@@ -11,7 +11,7 @@ Available as an npm package -- simply run `npm install react-alerts-overlay-comp
 Set up your reducer:
 
 ```javascript
-/* reducers.jsx */
+/* reducer.jsx */
 import {combineReducers} from 'redux';
 import {alertsReducer} from 'react-alerts-overlay-component';
 
@@ -87,9 +87,14 @@ module.exports = connect(mapAlertsToProps)(Main);
 
 ## Remember
 
-You must pass alerts (from state) to AlertsOverlayComponent as a prop: `<AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}>`.
+You must pass alerts (from state) to AlertsOverlayComponent as a prop: `<AlertsOverlayComponent alerts={alerts}>`.
 
-You must pass a child Alert object to AlertsOverlayComponent: `<AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}>`.
+You must pass a child Alert object to AlertsOverlayComponent: ```
+<AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}>
+  <Alert/>
+</AlertsOverlayComponent alerts={alerts}>
+
+```.
 
 You can pass styles to AlertsOverlayComponent: `<AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}> ...`.
 
