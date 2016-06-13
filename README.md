@@ -89,13 +89,20 @@ module.exports = connect(mapAlertsToProps)(Main);
 
 You must pass alerts (from state) to AlertsOverlayComponent as a prop: `<AlertsOverlayComponent alerts={alerts}>`.
 
-You must pass a child Alert object to AlertsOverlayComponent: ```
+
+
+You must pass a child Alert object to AlertsOverlayComponent:
+
+```
 <AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}>
   <Alert/>
 </AlertsOverlayComponent alerts={alerts}>
+```
 
-```.
+
 
 You can pass styles to AlertsOverlayComponent: `<AlertsOverlayComponent alerts={alerts} style={{padding: '1rem'}}> ...`.
+
+
 
 You can pass styles to Alert: `<Alert style={{padding: '1rem'}} />`.
