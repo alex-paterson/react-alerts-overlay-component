@@ -1,6 +1,6 @@
 {
   "name": "react-alerts-overlay-component",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A component, a reducer, and some actions for managing application alerts.",
   "main": "index.js",
   "directories": {
